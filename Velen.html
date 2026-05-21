@@ -6,7 +6,7 @@
     <title>Velen</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/mujstyl.css">
-    <style>
+   <style>
         .rightmenu ul{
          width: 150%;
         }
@@ -14,17 +14,23 @@
             margin-left: 220px;
         }
         .ramecky{
-            margin-left: 220px;
+            margin-left: 35px;
+            margin-top:0px;
             text-align: center;
             background-color: rgb(83, 82, 82);
             border: 5px groove black;
             box-shadow:3px 4px 5px  black;
-            height: 250px;
+            height: 450px;
+            width: 138%;
+            color: black;
+            transition: 0s;
+            font-family: serif;
            
         }
         .ramecky:hover{
-            color: black;
-            
+            color: white;
+            transform: scale(0.97);
+            transition: 1s;
            
         }
 
@@ -33,84 +39,106 @@
             height: 4px;
             background-color:white;
         }
-        .dropdown1{
-            position:absolute ;
-            background-color: rgb(61,16,16);
-            border: 2px groove gray;
-            padding: 30px;
-            margin-left: 90px;
-            margin-top: 30px;
+      .h3{
+       font-size: 60px ;
+       margin-top: 10px;
+       margin-bottom:0em;
+       
+      }
 
-        }
-        .dropdown-content1{
-           position:absolute;
-           display: none;
-           text-align: center;
-           padding: 15px;
-           margin-top: 30px;
-          margin-left: -93px;
-           width: 200px;
-           transition: 0.5s;
-           border: 2px solid gray;
-           
-        }
-        .dropdown1:hover .dropdown-content1{
-           display:block;
-           background-color: rgb(37, 9, 9) ;
-           padding: 0;
-        } 
-        .dropdown-content1 a{
-            color: white;
-            padding: 15px;
-            height: 50px;
-            display: block;
-            text-decoration: none;
-            
-            
-        }
-        .dropdown-content1 a:hover{
-            background-color: bisque;
-        }
-        .dropdown-content1:hover{
-            color: black;
-            transition: 0.5s;
-            transform: scale(1.1);
-        }
+      .containerV{
+        width: 1650px;
+      }
+      .h2V{
+       text-align: center;
+       margin-left: 100px;
+       margin-right: 30px;
+       width: 110%;
+       transition: 0.5s ease, transform 0.5s ease;
+       border-style:outset;
+       background-color:rgb(231, 158, 48);
+       padding: 5px;
+    }
+     .h2V:hover{
+       transition: 0.5s;
+       transform: scale(1.2);
+       text-shadow: 2px 1px 5px;
+     }
+      .footer1{
+       text-align: center;
+       width: 153%;
+       height: 77px;
+       margin-left: 0.1px;
+       margin-top: 120px;
+       transition: 5s ease;
+       text-decoration: none;
+       color: white;
+       
+     }
+     .zruseni a:hover{
+        color: white;
+     }
+     .tuk{
+        color: black;
+     }
+    .dropdown{
+        width: 35%;
+    }
+    .dropdown-content{
+       margin-left: 3px;
+    }
+    .dropdown-content a:hover{
+        color:rgb(19, 68, 21) ;
+    }
+    .zpatecka li{
+        margin-left: 4px;
+    }
     </style>
 
 
 </head>
-<div class="container">
+<div class="containerV">
 <body>
     <div class="container-in">
     <img src="img/velen.jpg">
 
     <nav class="rightmenu">
-    <h1 class="h2">Mapa a Úkoly</h2>
+    <h1 class="h2V">Mapa a Úkoly</h2>
  <ul>
      <li> <a href="mapa.html">Bělosad</li>
      <li> <a href="Velen.html">Velen</li>
      <li> <a href="Novigrad.html">Novigrad</li>
      <li> <a href="Skellige.html">Skellige</li>
      <li> <a href="Toussaint.html">Toussaint</li>
+        <a href="Velen.html">
 </ul>
-    
+    <nav class="zruseni">
+        <div class="dropdown"><i class="fa fa-bars"></i>
+            <div class="dropdown-content">. . .
+                <a href="krajina1.html">Krajina</a>
+                <a>. . .</a>
+            </div>
+        </div>
         <div class="ramecky">
-            <div class="dropdown1"><i class="fa fa-bars"></i>
-                <div class="dropdown-content1">. . .
-                    <a>g</a>
-                </div>
+            <h1 class="h3">Velen</h1>
+            <h1 class="nadpis">Úkoly</h1>
+            <p><b class="tuk">Krvavý Baron -</b> Geralt musí pro Krvavého barona najít jeho zmizlou manželku a dceru, 
+                aby výměnou získal informace o Ciri. Během pátrání odhaluje temné rodinné tajemství, rituálně řeší prokletí nenarozeného dítěte a zjišťuje,
+                 že stopa vede k čarodějnicím v bažinách.</p>
+                 <p><b class="tuk">Dámy lesa -</b>Geralt pátrá v bažinách po Ciri a narazí na tři zlé čarodějnice zvané Dámy lesa, které výměnou za informace požadují zničení tajemného ducha ve starém stromě. Splnění tohoto úkolu však tragicky zpečetí osud vesničanů i rodiny Krvavého Barona.</p>
+                 <p><b class="tuk">Putování ve tmě -</b>Geralt se spojí s čarodějkou Keirou Metz, aby v rozsáhlých elfích ruinách společně našli tajemného mága, který dříve pomáhal Ciri. Cestou musí překonat nebezpečné pasti, iluze a porazit mocného bojovníka Divokého honu jménem Nithral.</p>
             </div>
             
-            
-        </div>
-         <footer>
-<b>CD PROJEKT RED®</b>
-    </footer>
+         
     <div class="zpatecka">
     <ul>
-  <li><a href="mapa.html"><i class="fa fa-arrow-left"></i> </li>
+        <li><a href="mapa.html"><i class="fa fa-arrow-left"></i> </li>
     </ul>
+ 
+        </nav>
+           <footer class="footer1">
+<b>CD PROJEKT RED®</b>
+    </footer>
         </nav>
     </div>
     </div>
