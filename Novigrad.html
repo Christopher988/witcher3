@@ -9,74 +9,174 @@
 <style>
   
     .ramecky1{
-     margin-left: 50px;
-     text-align: center;
-     background-color: rgb(83, 82, 82);
-     border: 5px groove black;
-     box-shadow:3px 4px 5px  black;
-     height: 450px;
-     width: 100%;
-     color: black;
-     transition: 0s;
-     font-family: serif;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(83, 82, 82);
+    border: 5px groove black;
+    box-shadow: 3px 4px 5px black;
+    min-height: 450px;
+    width: 95%;
+    color: black;
+    font-family: serif;
+    transition: 1s;
+    padding: 20px;
+}
+
+.ramecky1:hover{
+    transform: scale(0.98);
+    color: white;
+}
+
+/* KONTEJNER */
+
+.containerN{
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+}
+
+/* MENU */
+
+.rightmenu ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rightmenu li{
+    min-width: 100px;
+    flex: 1;
+    max-width:100px;
+}
+
+/* NADPIS */
+
+.h2{
+    width: 95%;
+    max-width: 550px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    width: 100%;
+    min-height: 102px;
+    margin: 66px 0 0;
+    padding: 30px;
+}
+
+/* ZPET */
+
+.zpatecka li{
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 0;
+}
+
+/* H3 */
+
+.h3{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* DROPDOWN */
+
+.dropdown{
+    width: 170px;
+    max-width: 95%;
+}
+
+.dropdown-content{
+    margin-left: 0;
+}
+
+.dropdown-content a:hover{
+    color: rgb(19, 68, 21);
+}
+
+.zruseni a:hover{
+    color: white;
+}
+
+.tuk{
+    color: black;
+}
+
+/* OBRAZEK */
+
+img{
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* TABLET */
+
+@media (max-width: 992px){
+
+    .h3{
+        font-size: 42px;
     }
-    .ramecky1:hover{
-        transform: scale(0.97);
-        transition: 1s;
-        color: white;
+
+    .ramecky1{
+        width: 98%;
     }
-    .zruseni a:hover{
-        color: white;
+
+    .rightmenu li{
+        min-width: 120px;
     }
-    .containerN{
-     width: 1800px;
-    }
-    img{
+}
+
+/* MOBIL */
+
+@media (max-width: 768px){
+
+    .rightmenu ul{
+        flex-direction: column;
         width: 100%;
     }
-    .rightmenu ul{
-       width: 111%;
-    }
-    .rightmenu li{
-        width: 14%;
-    }
-    .h2{
-        margin-left: 255px;
-        width: 550px;
-    }
-    footer{
-        text-align: center;
-        margin-left: -8px;
-        width: 2120%;
-        height:77px;
-        margin-top: 91.5px;
 
+    .rightmenu li{
+        width: 100%;
+        max-width: none;
     }
-    .zpatecka li{
-        width: 100px;
-        margin-top: 30px;
-        margin-left: 4px;
+
+    .h2{
+        width: 98%;
+        margin: 10px auto;
     }
-   
+
     .h3{
-       font-size: 60px ;
-       margin-top: 10px;
-       margin-bottom:0em;
-       
-      }
-     .tuk{
-        color: black;
-     }
-     .dropdown{
-        width: 170px;
-     }
-     .dropdown-content{
-        margin-left: -2px;
-        
-     }
-     .dropdown-content a:hover{
-        color: rgb(19, 68, 21);
-     }
+        font-size: 30px;
+    }
+
+    .ramecky1{
+        width: 98%;
+        min-height: auto;
+        padding: 15px;
+    }
+
+    .dropdown{
+        width: 95%;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    footer{
+        padding: 20px;
+    }
+}
 </style>
 </head>
 <body>
