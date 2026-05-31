@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konec</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(197,197,197);
+    margin: 0;
+}
+
+/* HEADER */
+
+header{
+    background-color: rgb(61, 16, 16);
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TEXT */
+
+.nadpis{
+    text-align: center;
+    font-size: 70px;
+    font-variant: small-caps;
+}
+
+.info{
+    background-color: gray;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+.img1{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.img1 img{
+    width: 100%;
+    height: auto;
+}
+
+/* ZPĚT */
+
+.zpatecka ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.zpatecka li{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(61, 16, 16);
+    border: 2px solid gray;
+    transition: 0.5s;
+}
+
+.zpatecka li:hover{
+    transform: scale(1.1);
+}
+
+i{
+    display: block;
+    text-align: center;
+    line-height: 76px;
+    font-size: 24px;
+    color: white;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+i:hover{
+    color: rgb(228, 173, 72);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline black;
+    width: 100%;
+    margin-top: 30px;
+}
+
+footer:hover{
+    color: rgb(134, 1, 1);
+    transition: 0.5s;
+}
+
+/* TABLET */
+
+@media (max-width: 992px){
+
+    .nadpis{
+        font-size: 50px;
+    }
+
+    .info{
+        width: 95%;
+    }
+}
+
+/* MOBIL */
+
+@media (max-width: 768px){
+
+    .nadpis{
+        font-size: 34px;
+    }
+
+    .info{
+        width: 98%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    p{
+        line-height: 1.6;
+    }
+
+    header{
+        width: 98%;
+    }
+
+    .zpatecka li{
+        width: 70px;
+        height: 70px;
+    }
+
+    i{
+        line-height: 66px;
+        font-size: 20px;
+        padding: 25px;
+    }
+}
+    </style>
+</head>
+ <header>
+        <img src="img/ciri.jpg">
+    </header>
+<body>
+   <div class="info">
+    <h1 class="nadpis">Konec</h1>
+    <p>Konec hry Zaklínač 3: Divoký hon je vyvrcholením celého Geraltova a Ciriina příběhu. 
+        Hra je proslulá tím, že nenabízí jeden univerzální konec, ale její rozuzlení závisí na sérii rozhodnutí, která hráč učiní v průběhu druhé poloviny hry.
+    Samotný závěr hlavní dějové linie se odehrává na ostrovech Skellige, kde Geralt, Yennefer, Triss, Ciri a spojené síly (včetně nilfgaardského loďstva) nalákají Divokou honbu do pasti pomocí bájného Slunečního kamene.
+Geralt v epickém souboji na palubě vlajkové lodi porazí krále Divoké honby, Eredina.
+To, jak příběh dopadne, závisí na pěti klíčových momentech po bitvě o Kaer Morhen.
+ Záleží na tom, zda Geralt Ciri podporoval v její samostatnosti, nebo se k ní choval příliš ochranitelsky a bral jí svobodu.
+<b>Konec 1: Tragický konec (Ciri zemře / zmizí)</b>
+Pokud hráč udělal většinu špatných rozhodnutí (např. vzal od císaře peníze za její nalezení, doprovázel ji na schůzku s čarodějnicemi, zakázal jí zničit Avallac'hovo doupě nebo jí nedovolil navštívit Skjallův hrob), 
+Ciri si vzpomene na Geraltův nedostatek důvěry. 
+V portálu neuspěje a zahyne (nebo se odmítne vrátit).
+<b>Konec 2: Ciri zaklínačkou (Šťastný konec)</b>
+Pokud byl Geralt dobrou otcovskou figurou (podporoval ji, dělal si z ní legraci, nechal ji jednat samostatně) a zároveň ji nevzal za jejím biologickým otcem, císařem Emhyrem (nebo Nilfgaard prohrál válku),
+ Ciri Bílou zimu přežije.
+<b>Konec 3: Ciri císařovnou (Hořkosladký konec)</b>
+Pokud byl Geralt skvělým otcem, ale zároveň Ciri vzal do Wyzimy za císařem Emhyrem a Nilfgaard vyhrál válku, Ciri po záchraně světa dojde k závěru, 
+že jako zaklínačka pomůže jen několika lidem, ale jako panovnice může změnit celý svět.
+Kromě Ciri hra v závěrečných malovaných animacích shrne osud celého kontinentu na základě dalších hráčových voleb.</p>
+<img src="img/eredinlod.jpg">
+    </div>
+</body>
+   <nav class="zpatecka">
+         <ul>
+            <li><a href="lore.html"><i class="fa fa-arrow-left"></i></li>
+         </ul>
+        
+       <footer>   
+        <b>CD PROJEKT RED®</b>
+        </footer>
+         </nav>
+</html>

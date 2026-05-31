@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krajina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+            *{
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body{
+    background-color: rgb(85, 83, 83);
+    margin: 0;
+}
+
+/* OBRÁZKY */
+
+img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.img1,
+.img2{
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+img:hover{
+    transform: scale(1.03);
+}
+
+/* ČLÁNKY */
+
+article{
+    width: 95%;
+    max-width: 700px;
+    margin: 20px auto;
+    display: flex;
+    text-align: center;
+    background-color: rgb(45, 16, 16);
+    box-shadow: 4px 2px 2px 3px;
+    color: rgba(255,255,255,0.55);
+    font-size: smaller;
+    transition: 1s;
+    padding: 15px;
+}
+
+.article1,
+.article2{
+    width: 95%;
+    max-width: 700px;
+    margin: 20px auto;
+    height: auto;
+}
+
+article:hover{
+    transform: scale(1.02);
+    color: white;
+    font-family: serif;
+}
+
+.article1:hover,
+.article2:hover{
+    transform: scale(1.03);
+}
+
+/* MENU */
+
+.rightmenu ul,
+.rightmenu1 ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.rightmenu1 ul{
+    padding: 0;
+}
+
+.rightmenu li{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    list-style: none;
+    padding: 20px;
+    margin: 5px;
+    background-color: rgb(61, 16, 16);
+    color: white;
+    border: 2px solid gray;
+    transition: 0.5s;
+}
+
+.rightmenu li:hover{
+    transform: scale(1.05);
+}
+
+.rightmenu1 li{
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(85, 83, 83);
+    border-radius: 300px;
+    transition: 1s;
+}
+
+.rightmenu1 li:hover{
+    transform: scale(1.05);
+}
+
+/* IKONY */
+
+i{
+    color: white;
+    transition: 0.3s;
+}
+
+i:hover{
+    color: rgb(228, 173, 72);
+}
+
+/* KONTEJNER */
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* ZPĚT */
+
+.zpatecka{
+    width: 50px;
+    margin-left: 8px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    text-decoration: underline black;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+footer:hover{
+    color: rgb(134, 1, 1);
+    transition: 0.5s;
+}
+
+/* TABLET */
+
+@media (max-width: 992px){
+
+    article,
+    .article1,
+    .article2{
+        max-width: 95%;
+    }
+
+    img,
+    .img1,
+    .img2{
+        max-width: 95%;
+    }
+}
+
+/* MOBIL */
+
+@media (max-width: 768px){
+
+    .rightmenu ul,
+    .rightmenu1 ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightmenu li{
+        width: 95%;
+        text-align: center;
+    }
+
+    article{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    img:hover,
+    article:hover{
+        transform: none;
+    }
+}
+</style>
+</head>
+<div class="container">
+<body>
+    <img src="img/palac.jpg">
+    <article>
+     <b>Palác Beauclair</b>
+     <hr>
+    
+    Palác působí skoro pohádkově — bílé věže, barevné zahrady, vinice a rytířská atmosféra kontrastují s temným světem severních království. 
+    Tvůrci se inspirovali hlavně francouzskou a středomořskou architekturou.
+    Historicky byl původně postaven elfy a později přestavěn architektem Peterem Faramondem během vlády Adely Marty. 
+    Palác obsahuje obrovskou knihovnu, rytířský sál a dokonce tajné magické chodby skryté iluzemi.
+     <hr>
+       Nejdůležitější osobou paláce je samozřejmě vévodkyně Anna Henrietta, často nazývaná Anarietta. 
+       Je vládkyní Toussaintu a zároveň jednou z nejcharismatičtějších postav v celé hře.
+        Na první pohled působí jako rozmazlená aristokratka milující turnaje, víno a dvorskou etiketu. 
+        Ve skutečnosti ale vládne zemi, která je politicky velmi složitá. 
+        Toussaint je vazalským státem Nilfgaardu — formálně podřízený císaři Emhyrovi, ale zároveň si zachovává velkou autonomii.
+          <hr>
+         Obyčejní lidé Toussaintu se od severu také hodně liší.
+          Ve městě Beauclair člověk vidí vinaře, bardy, obchodníky, malíře a řemeslníky. 
+          Lidé zde působí veseleji a uvolněněji. Víno je téměř součástí identity země a slavnosti jsou běžnou součástí života. 
+          Dokonce i stráže a rytíři mají elegantnější uniformy než vojáci severních království.
+    </article>
+    <nav class="rightmenu1">
+        <ul>
+            <li></li>
+        </ul>
+    </nav>
+    <div class="img2">
+    <img src="img/vinice.jpg">
+    </div>
+    <article class="article2">
+    <b>Vinice Corvo Bianco </b>
+     <hr>
+       Kdysi bývalo Corvo Bianco pyšným vinařstvím. 
+       Ve sklepích odpočívala nejlepší vína široko daleko a zahrady byly plné růží, fontán a soch.
+       Corvo Bianco se nachází v malebném, sluncem zalitém knížectví Toussaint, které je známé svou rytířskou kulturou, absencí válek a především prvotřídním vínem.
+        Vinice má bohatou historii, ale před Geraltovým příchodem upadla do dluhů a chátrala, protože její předchozí majitel, baron Rossel, zkrachoval.
+         Vinici proto převzala knížecí koruna.
+         <hr>
+       Geralt vinici nezíská koupí, nýbrž jako součást odměny od kněžny Anny Henrietty za přijetí zakázky na polapení Bestie z Beauclair.
+        Anna Henrietta si uvědomuje, že zaklínač potřebuje zázemí pro své vyšetřování, a zároveň jde o projev knížecí velkorysosti.
+         K majetku Geralt dostane také osobního majordoma jménem Barnabáš-Bazil Foulty, který se stará o chod panství a pomáhá zaklínačovi s jeho správou.
+         Nejde jen o obyčejnou lokaci na mapě, ale o bezpečný přístav, který Geraltovi z Rivie poprvé v jeho dlouhém a nebezpečném životě poskytuje skutečný domov.
+    </article>
+    <div class="img1">
+    <img src="img/zemevina.jpg">
+    </div>
+    <article class="article1">
+        <b>Toussaint země vína a krve</b>
+        <hr>
+          Na první pohled Toussaint působí jako vystřižený z idealizované pohádky nebo renesančního obrazu.
+           Zatímco zbytek Severních království drancovala armáda a sužovala chudoba, toto knížectví zůstalo válkou zcela netknuté.
+           Krajina je permanentně zalitá sluncem, plná zvlněných kopců, olivových hájů a nekonečných vinic.
+            
+
+           <hr>
+         Víno je tlukoucím srdcem zdejší ekonomiky i kultury. 
+         Místní odrůdy jako Erveluce, Fiorano nebo legendární Est Est jsou ceněny po celém známém světě.
+          Vinařství zde není jen řemeslem, ale posvátnou tradicí chráněnou zákony. Každá vinice má svou historii a status.
+          Společnost se řídí pěti rytířskými ctnostmi (štědrost, chrabrost, čest, soucit a moudrost).
+           Putující rytíři v naleštěných zbrojích zde skládají patetické přísahy, bojují na turnajích o přízeň dvorních dam a recitují poezii.
+           Toussaint je historicky i fakticky domovem prastarých, nesmírně mocných bytostí - vyšších upírů.
+            Zatímco lidé věří, že zemi vládnou oni, v podzemí a stínech existuje paralelní společnost upírů s vlastními pravidly a historií.
+           Teplé klima a rozsáhlá síť jeskyní a elfských ruin pod Beauclair vyhovují specifickým nestvůrám. 
+          
+    </article>
+</div>
+     
+    <nav class="rightmenu">
+    <div class="zpatecka">
+    <ul>
+  <li><a href="Skellige.html"><i class="fa fa-arrow-left"></i> </li>
+    </ul>
+
+  </div>
+      <b>
+      <footer>
+  CD PROJEKT RED®
+    </footer>
+    </b>
+</nav>
+</body>
+</html>

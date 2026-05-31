@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bělosad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(197,197,197);
+    margin: 0;
+}
+
+/* HEADER */
+
+header{
+    background-color: rgb(61, 16, 16);
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TEXT */
+
+.nadpis{
+    text-align: center;
+    font-size: 70px;
+    font-variant: small-caps;
+}
+
+.info{
+    background-color: gray;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+.img1{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.img1 img{
+    width: 100%;
+    height: auto;
+}
+
+/* ZPĚT */
+
+.zpatecka ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.zpatecka li{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(61, 16, 16);
+    border: 2px solid gray;
+    transition: 0.5s;
+}
+
+.zpatecka li:hover{
+    transform: scale(1.1);
+}
+
+i{
+    display: block;
+    text-align: center;
+    line-height: 76px;
+    font-size: 24px;
+    color: white;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+i:hover{
+    color: rgb(228, 173, 72);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline black;
+    width: 100%;
+    margin-top: 30px;
+}
+
+footer:hover{
+    color: rgb(134, 1, 1);
+    transition: 0.5s;
+}
+
+/* TABLET */
+
+@media (max-width: 992px){
+
+    .nadpis{
+        font-size: 50px;
+    }
+
+    .info{
+        width: 95%;
+    }
+}
+
+/* MOBIL */
+
+@media (max-width: 768px){
+
+    .nadpis{
+        font-size: 34px;
+    }
+
+    .info{
+        width: 98%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    p{
+        line-height: 1.6;
+    }
+
+    header{
+        width: 98%;
+    }
+
+    .zpatecka li{
+        width: 70px;
+        height: 70px;
+    }
+
+    i{
+        line-height: 66px;
+        font-size: 20px;
+        padding: 25px;
+    }
+}
+    </style>
+</head>
+ <header>
+        <img src="img/nahled.jpg">
+    </header>
+<body>
+   <div class="info">
+    <h1 class="nadpis">Bělosad</h1>
+    <p>je jednou z nejdůležitějších lokací ve hře Zaklínač 3: Divoký hon. 
+        Slouží jako prologová oblast - jakési obrovské herní pískoviště, které má hráče uvést do mechanik hry, představit mu atmosféru světa zasaženého válkou a nastartovat hlavní příběhovou linii.
+        Bělosad je temerská venkovská oblast, která dostala své jméno podle rozsáhlých ovocných sadů, jež na jaře rozkvétají bílými květy. Na první pohled působí krajina až idylicky - protéká jí řeka Ismena, jsou zde větrné mlýny, prosluněné louky a malebné chalupy.
+          Tato idylka je však pouhou fasádou. 
+Kraj se stal dějištěm tvrdých bojů.
+ Krátce před Geraltovým příjezdem zde severní království Temerie prohrálo bitvu s imperiálním Nilfgaardem.
+  Oblast je nyní okupovaná nilfgaardskou armádou, pole jsou posetá mrtvolami, některé vesnice jsou vypálené a na stromech visí oběšení partyzáni či zloději. 
+  Hráč zde okamžitě pocítí bezútěšnost války.
+  Geralt do Bělosadu přijíždí se svým mentorem Vesemirem.
+   Jejich hlavním cílem je najít Yennefer z Vengerbergu, Geraltovu životní lásku, která mu poslala dopis, ale pak zmizela.
+   Přestože jde o startovní lokaci, CD Projekt RED zde představil skvěle napsané vedlejší postavy, které dokonale dokreslují zaklínačský svět.
+   Z hlediska hratelnosti je Bělosad navržen tak, aby hráče nenásilně naučil vše, co bude ve zbytku hry potřebovat.</p>
+        <img src="img/gryf.jpg">
+
+</body>
+
+   <nav class="zpatecka">
+         <ul>
+            <li><a href="lore.html"><i class="fa fa-arrow-left"></i></li>
+         </ul>
+        
+       <footer>   
+        <b>CD PROJEKT RED®</b>
+        </footer>
+         </nav>
+         
+</html>

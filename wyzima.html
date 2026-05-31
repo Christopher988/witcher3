@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizima</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(197,197,197);
+    margin: 0;
+}
+
+/* HEADER */
+
+header{
+    background-color: rgb(61, 16, 16);
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TEXT */
+
+.nadpis{
+    text-align: center;
+    font-size: 70px;
+    font-variant: small-caps;
+}
+
+.info{
+    background-color: gray;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+.img1{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.img1 img{
+    width: 100%;
+    height: auto;
+}
+
+/* ZPĚT */
+
+.zpatecka ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.zpatecka li{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(61, 16, 16);
+    border: 2px solid gray;
+    transition: 0.5s;
+}
+
+.zpatecka li:hover{
+    transform: scale(1.1);
+}
+
+i{
+    display: block;
+    text-align: center;
+    line-height: 76px;
+    font-size: 24px;
+    color: white;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+i:hover{
+    color: rgb(228, 173, 72);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline black;
+    width: 100%;
+    margin-top: 30px;
+}
+
+footer:hover{
+    color: rgb(134, 1, 1);
+    transition: 0.5s;
+}
+
+/* TABLET */
+
+@media (max-width: 992px){
+
+    .nadpis{
+        font-size: 50px;
+    }
+
+    .info{
+        width: 95%;
+    }
+}
+
+/* MOBIL */
+
+@media (max-width: 768px){
+
+    .nadpis{
+        font-size: 34px;
+    }
+
+    .info{
+        width: 98%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    p{
+        line-height: 1.6;
+    }
+
+    header{
+        width: 98%;
+    }
+
+    .zpatecka li{
+        width: 70px;
+        height: 70px;
+    }
+
+    i{
+        line-height: 66px;
+        font-size: 20px;
+        padding: 25px;
+    }
+}
+    </style>
+</head>
+ <header>
+        <img src="img/wyzima.jpg">
+    </header>
+<body>
+  <div class="info">
+    <h1 class="nadpis">Wyzima</h1>
+    <p>Wyzima byla původně hlavním městem království Temerie a sídlem krále Foltesta. 
+        Bývalo to pulzující, mocné severní velkoměsto postavené na břehu jezera Wyzima.
+V době, kdy se odehrává Zaklínač 3, je však situace drasticky odlišná. 
+Temerie padla pod náporem nilfgaardské armády. 
+Wyzima byla okupována a tamní královský palác byl přeměněn na přechodné sídlo nilfgaardského císaře Emhyra var Emreise.
+ Zdejší atmosféra je plná napětí - honosné sály, kde kdysi hodovali severští šlechtici, jsou nyní chladným velitelským centrem dobyvatelů z Jihu.
+Hráč se do Wyzimy dostává okamžitě po dokončení prologu v Bělosadu. 
+Geralta sem eskortuje Yennefer a tato návštěva funguje jako zásadní most mezi úvodem hry a otevřením celého obrovského světa.
+Na rozdíl od prvního dílu, kde byla k dispozici celá Wyzima, v Zaklínačovi 3 je tato lokace omezena pouze na královský palác a jeho přilehlé zahrady.
+ Nemůžete tedy opustit brány paláce a jít do ulic města.
+</p>
+<img src="img/trun.jpg">
+    </div>
+</body>
+   <nav class="zpatecka">
+         <ul>
+            <li><a href="lore.html"><i class="fa fa-arrow-left"></i></li>
+         </ul>
+        
+       <footer>   
+        <b>CD PROJEKT RED®</b>
+        </footer>
+         </nav>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Hře</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: serif;
+    background-color: rgb(197,197,197);
+}
+
+/* HEADER */
+
+header{
+    width: 90%;
+    max-width: 1200px;
+    min-height: 120px;
+    margin: 30px auto;
+    text-align: center;
+    background-color: rgba(189, 139, 14, 0.795);
+    border: 4px solid goldenrod;
+    border-radius: 10px;
+    box-shadow: white 2px -4px 15px 5px;
+    padding: 10px;
+    font-size: 70px;
+    font-weight: bold;
+    font-variant: small-caps;
+    transition: 0.5s;
+}
+
+header:hover{
+    transform: scale(1.03);
+}
+
+/* ČLÁNEK */
+
+article{
+    background-color: rgba(128,128,128,0.719);
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: auto;
+}
+
+/* TEXT */
+
+.text{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgba(0,0,0,0.75);
+    font-size: 18px;
+    margin: 20px;
+}
+
+.barva{
+    color: rgb(134,1,1);
+}
+
+.cerny{
+    color: black;
+}
+
+/* OBRÁZKY */
+
+img{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    transition: 0.5s;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+.img1{
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.img1 img{
+    width: 100%;
+    max-width: none;
+}
+
+/* TLAČÍTKA */
+
+.zpatecka ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.zpatecka li{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(61,16,16);
+    border: 2px solid gray;
+    transition: 0.5s;
+}
+
+.zpatecka li:hover{
+    transform: scale(1.1);
+}
+
+.zpatecka a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+i{
+    display: block;
+    text-align: center;
+    line-height: 76px;
+    font-size: 24px;
+    padding: 30px;
+    color: white;
+}
+
+i:hover{
+    color: rgb(228,173,72);
+}
+
+.stranky{
+    width: auto;
+    min-width: 180px;
+    height: auto;
+    border-radius: 30px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    text-decoration: underline black;
+    margin-top: 30px;
+}
+
+footer:hover{
+    color: rgb(134,1,1);
+    transition: 0.5s;
+}
+
+/* TABLET */
+
+@media (max-width: 992px){
+
+    header{
+        font-size: 50px;
+    }
+
+    article{
+        width: 95%;
+    }
+}
+
+/* MOBIL */
+
+@media (max-width: 768px){
+
+    header{
+        font-size: 32px;
+        width: 98%;
+    }
+
+    article{
+        width: 98%;
+        padding: 15px;
+    }
+
+    .text{
+        font-size: 16px;
+        margin: 10px;
+        line-height: 1.6;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    .zpatecka ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stranky{
+        width: 90%;
+    }
+}
+    </style>
+    <header>
+    <span class="barva">Zaklínač III</span> <span class="cerny">- Divoký hon</span>
+    
+    
+    </header>
+</head>
+<body>
+    
+    <article>
+        
+        <img src="img/medailon.jpg">
+<p class="text">Zaklínač 3: Divoký hon (The Witcher 3: Wild Hunt) je jednou z nejvýznamnějších a nejvlivnějších her v historii videoherního průmyslu. 
+    Tato akční RPG hra, kterou vyvinulo polské studio CD Projekt RED, vyšla v roce 2015 a okamžitě redefinovala standardy pro hry s otevřeným světem a vyprávění příběhů.</p>
+    <hr>
+    <p class="text">Hra byla oficiálně oznámena v únoru 2013 a původně měla vyjít v roce 2014.
+         Vývojáři však vydání několikrát odložili, aby hru maximálně vyladili a odstranili chyby, což se nakonec ukázalo jako skvělé rozhodnutí.
+        Datum vydání je 19. května 2015.
+    Hra je založena na knižní sáze polského spisovatele Andrzeje Sapkowského.
+     Hráč se ujímá role Geralta z Rivie, geneticky mutovaného lovce monster (zaklínače), který v rozsáhlém fantasy světě sužovaném válkou hledá svou adoptivní dceru Ciri.
+      Tu totiž pronásleduje tajuplná a děsivá Divoká honba.
+      Svět Zaklínače není černobílý. 
+      Hráč málokdy volí mezi dobrem a zlem; většinou si vybírá „menší zlo“.
+       Rozhodnutí navíc mají často dalekosáhlé následky, které se projeví až po mnoha hodinách hraní. 
+       Hra nabízí 3 hlavní konce a desítky menších variant stavu světa.
+       Svět je rozdělen do několika masivních regionů - od válkou zničeného Velení, přes svobodné město Novigrad, až po severské ostrovy Skellige inspirované keltskou a vikinskou mytologií.
+       Gwent: Karetní minihra implementovaná přímo do hry se stala tak populární, že si vysloužila vlastní samostatné zpracování.
+    </p>
+    <hr>
+    <p class="text">Kromě bezplatných balíčků dostala hra dvě masivní, placená příběhová rozšíření, která kvalitou i rozsahem předčila většinu samostatných her na trhu.
+        Srdce z kamene (Hearts of Stone, říjen 2015): Přineslo temný, komornější příběh inspirovaný faustovskou legendou, ve kterém Geralt uzavře dohodu s tajuplným Zrcadelníkem.
+        O víně a krvi (Blood and Wine, květen 2016): Zavedlo hráče do zcela nového regionu Toussaint, který nebyl zasažen válkou a připomíná renesanční Francii či Itálii.
+         Toto rozšíření nabídlo více než 30 hodin obsahu a fungovalo jako definitivní a dojemná tečka za Geraltovým příběhem.
+         Úspěch Zaklínače 3 byl naprosto fenomenální a katapultoval CD Projekt RED mezi absolutní herní elitu.
+         Na prestižním udílení cen The Game Awards 2015 získal Zaklínač 3 titul Hra roku (Game of the Year) a CD Projekt RED byl vyhlášen vývojářským studiem roku.
+          Datadisek O víně a krvi pak v roce 2016 vyhrál cenu za nejlepší RPG roku, což je pro DLC historický unikát.
+          Zaklínač 3 zásadně ovlivnil to, jak herní průmysl nahlíží na hry s otevřeným světem. Nastavil laťku v oblasti psaní dialogů, dospělého vyprávění a designu questů, ze které dodnes čerpají série jako Assassin's Creed nebo Cyberpunk 2077 (další hra od téhož studia).
+          Masivní úspěch hry navíc definitivně zpopularizoval zaklínačský svět celosvětově, což vedlo k vytvoření seriálové adaptace od Netflixu, komiksů, deskových her a k oznámení nové zaklínačské trilogie i enginového remaku úplně prvního dílu.
+    </p>
+    <div class="img1">
+    <img src="img/eredin.jpg">
+    </div>
+    </article>
+    <nav class="zpatecka">
+        <ul>
+            <li><a href="index.html"><i class="fa fa-arrow-left"></i></li>
+                <li class="stranky"><a href="https://www.thewitcher.com/cz/en">Oficiální stránky</li>
+        </ul>
+</body>
+
+    </nav>
+<footer>
+    <b>CD PROJEKT RED®</b>
+    </footer>
+    
+</html>

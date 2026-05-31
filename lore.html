@@ -1,11 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="mujstyl.css">
+    <title>Příběh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+     *{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: serif;
+    color: white;
+    background-color: rgb(197,197,197);
+}
+
+.container{
+    width: 100%;
+    max-width: 1900px;
+    margin: auto;
+}
+
+.container-in{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* HEADER */
+
+header{
+    background-color: rgb(61, 16, 16);
+    width: 90%;
+    max-width: 1200px;
+    min-height: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* MENU */
+
+.leftmenu ul,
+.rightmenu ul{
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.leftmenu li,
+.rightmenu li{
+    background-color: rgb(61, 16, 16);
+    width: 140px;
+    min-height: 70px;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid gray;
+    transition: 0.5s;
+}
+
+.leftmenu li:hover,
+.rightmenu li:hover{
+    transform: scale(1.05);
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.leftmenu a,
+.rightmenu a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.leftmenu a:hover,
+.rightmenu a:hover{
+    color: black;
+}
+
+/* INFO */
+
+.info{
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.nadpis{
+    text-align: center;
+    font-size: 70px;
+    font-variant: small-caps;
+}
+
+/* OBRÁZEK GERALT */
+
+.img1{
+    width: 100%;
+    max-width: 1075px;
+    margin: 20px auto;
+}
+
+.img1 img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ZPĚT */
+
+.zpatecka ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.zpatecka li{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(61, 16, 16);
+    border: 2px solid gray;
+    transition: 0.5s;
+}
+
+.zpatecka li:hover{
+    transform: scale(1.1);
+}
+
+i{
+    color: white;
+    font-size: 24px;
+    line-height: 76px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+i:hover{
+    color: rgb(228, 173, 72);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    text-decoration: underline black;
+    margin-top: 40px;
+}
+
+footer:hover{
+    color: rgb(134, 1, 1);
+}
+
+/* MOBIL */
+
+@media (max-width: 768px){
+
+    .leftmenu ul,
+    .rightmenu ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftmenu li,
+    .rightmenu li{
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .nadpis{
+        font-size: 34px;
+    }
+
+    .info{
+        width: 98%;
+        padding: 15px;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    header{
+        width: 98%;
+    }
+}
+    </style>
+    <div class="container">
+      
+    <header>
+      <img src="img/tapeta.jpg">
+    </header>
+   
+   
+    <nav class="leftmenu">
+        <ul>
+            <li><a href="kaermorhen.html">Kaer Morhen</li>
+            <li><a href="belosad.html">Bělosad</li>
+            <li><a href="wyzima.html">Wizima</li>
+            <li><a href="velenp.html">Velen</li>
+        </ul>
+        </nav>
+        <nav class="rightmenu">
+        <ul>
+            <li><a href="novigradp.html">Novigrad</li>
+            <li><a href="skelligep.html">Skellige</li>
+            <li><a href="ostrovmlh.html">Ostrov Mlh</li>
+            <li><a href="konec.html">Konec</li>
+        </ul>
+        <nav class="zruseni">
+        <div class="info">
+    <h1 class="nadpis">Zaklínač</h1>
+    <p>Zaklínači jsou speciálně vycvičení a mutovaní nájemní zabijáci monster, kteří byli stvořeni za účelem ochrany lidstva před nebezpečnými tvory. 
+      V dětství museli projít bolestivým procesem alchymistických mutací, známým jako Zkouška trav, který jim sice prořízl řady vrstevníků, ale přeživším daroval nadlidské reflexy, rychlost, sílu a schopnost vidět ve tmě. 
+      Pro svou práci jsou vybaveni dvěma meči - ocelovým na běžné protivníky a stříbrným na magické příšery - a také schopností využívat jednoduchou magii v podobě zaklínačských znamení. 
+      Před bitvou si své smysly a schopnosti dál zostřují pitím toxických elixírů, které by běžného člověka usmrtily.
+       Každý z nich nosí medailon své zaklínačské školy, například s motivem vlka či kočky, který vibrováním varuje před blízkou magií nebo nebezpečím.
+        Přestože o nich koluje mýtus, že vlivem mutací zcela ztratili lidské emoce, často prožívají složité vnitřní konflikty.
+        V běžném světě se však potýkají s předsudky a opovržením ze strany lidí, kteří je vnímají jako bezcitné mutanty, a ačkoliv kodex zaklínačům ukládá přísnou politickou neutralitu, v realitě plné intrik je pro ně téměř nemožné se do konfliktů nezaplést.
+        <div class="img1">
+        <img src="img/epicgeralt.jpg"></p>
+        </div>
+    </div>
+    
+    </nav>
+        </nav>
+        <nav class="zpatecka">
+         <ul>
+            <li><a href="index.html"><i class="fa fa-arrow-left"></i></li>
+         </ul>
+        
+        <footer>
+        <b>CD PROJEKT RED®</b>
+        </footer>
+    
+        </nav>
+    
+        
 </head>
+ 
 <body>
+    
 </body>
+</div>
+
 </html>
