@@ -8,88 +8,188 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .containerT{
-            width: 1480px;
-           
-        }
-        .h3{
-            font-size: 60px ;
-           margin-top: 10px;
-           margin-bottom:0em;
-    }
-    .zruseni a:hover{
-        color: white;
-        }
-      .ram{
-        font-family: serif;
-        border: 2px transparent black;
-        border-style:groove;
-        text-align: center;
-        padding-bottom: 100px;
-        padding-top: 5px;
-        width: 170%;
-        margin-left: 40px;
-        margin-top:0px ;
-        transition: 1s ease, transform 0s ease;
-        color: black;
-        font-style: serif;
-        background-color: rgb(83, 82, 82);
-     
-    
-    
+    width: 100%;
+    max-width: 1425px;
+    margin: auto;
 }
-.ram:hover{
-    background-color: rgb(83, 82, 82);
-    transition: 1s ease;
-    transform: scale(0.97);
+
+/* NADPIS */
+
+.h3{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* ODKAZY */
+
+.zruseni a:hover{
     color: white;
-    
-    }
-    footer{
-        height: 83.5px;
-        margin-top: 125px;
-        width: 1925%;
-        margin-left: -8px;
-    }
-    .dropdown{
-        width: 35%;
-    }
-    .dropdown-content{
-        margin-left:3px;
-    }
-    .dropdown-content a:hover{
+}
+
+/* HLAVNI BLOK */
+
+.ram{
+    font-family: serif;
+    border-style: groove;
+    text-align: center;
+    padding: 20px;
+    width: 95%;
+    margin: 0 auto;
+    color: black;
+    background-color: rgb(83, 82, 82);
+    transition: 1s;
+}
+
+.ram:hover{
+    transform: scale(0.98);
+    color: white;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    min-height: 124px;
+    padding: 40px;
+    margin: 85px 0 0;
+}
+
+/* DROPDOWN */
+
+.dropdown{
+    width: 250px;
+    max-width: 95%;
+}
+
+.dropdown-content{
+    margin-left: 0;
+    margin-left: 40px;
+}
+
+.dropdown-content a:hover{
     color: rgb(19, 68, 21);
-  }
-    .tuk{
-        color: black;
-    }
-    .rightmenu ul{
-        width: 180%;
-        margin-left: 5px;
-    }
-    .rightmenu li{
-        width: 15%;
 }
+
+/* TEXT */
+
+.tuk{
+    color: black;
+}
+
+/* MENU */
+
+.rightmenu ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.rightmenu li{
+    flex: 1;
+    min-width: 120px;
+    max-width: 100px;
+}
+
+/* H2 */
+
 .h2{
- text-align: center;
-  margin-left: 140px;
-  margin-right: 70px;
-  margin-top: 20px;
-  transition: 0.5s ease, transform 0.5s ease;
-   border-style:outset;
-   background-color:rgb(231, 158, 48);
-   padding: 5px;
-   width: 130%;
+    text-align: center;
+    margin: 20px auto;
+    width: 95%;
+    max-width: 900px;
+    border-style: outset;
+    background-color: rgb(231, 158, 48);
+    padding: 5px;
+    transition: 0.5s;
 }
+
 .h2:hover{
-  transition: 0.5s;
-  transform: scale(1.2);
-  text-shadow: 2px 1px 5px;
-  }
-  .zpatecka li{
-    width: 70%;
-    margin-left: -1px;
-  }
- 
+    transform: scale(1.05);
+    text-shadow: 2px 1px 5px;
+}
+
+/* ZPET */
+
+.zpatecka li{
+    width: 100px;
+    margin-left: 0;
+}
+
+/* OBRAZEK */
+
+img{
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* TABLET */
+
+@media (max-width: 992px){
+
+    .h3{
+        font-size: 42px;
+    }
+
+    .ram{
+        width: 98%;
+    }
+
+    .h2{
+        width: 98%;
+    }
+
+    .rightmenu li{
+        min-width: 120px;
+    }
+}
+
+/* MOBIL */
+
+@media (max-width: 768px){
+
+    .rightmenu ul{
+        flex-direction: column;
+    }
+
+    .rightmenu li{
+        width: 100%;
+        max-width: none;
+    }
+
+    .h3{
+        font-size: 30px;
+    }
+
+    .h2{
+        width: 98%;
+        margin: 10px auto;
+    }
+
+    .ram{
+        width: 98%;
+        padding: 15px;
+    }
+
+    .dropdown{
+        width: 95%;
+    }
+
+    footer{
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
     </style>
 </head>
 <div class="containerT">
