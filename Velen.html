@@ -7,92 +7,203 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/mujstyl.css">
    <style>
-        .rightmenu ul{
-         width: 150%;
-        }
-        .h2{
-            margin-left: 220px;
-        }
-        .ramecky{
-            margin-left: 35px;
-            margin-top:0px;
-            text-align: center;
-            background-color: rgb(83, 82, 82);
-            border: 5px groove black;
-            box-shadow:3px 4px 5px  black;
-            height: 450px;
-            width: 138%;
-            color: black;
-            transition: 0s;
-            font-family: serif;
-           
-        }
-        .ramecky:hover{
-            color: white;
-            transform: scale(0.97);
-            transition: 1s;
-           
-        }
+       .rightmenu ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-        hr{
-            
-            height: 4px;
-            background-color:white;
-        }
-      .h3{
-       font-size: 60px ;
-       margin-top: 10px;
-       margin-bottom:0em;
-       
-      }
+/* NADPIS */
 
-      .containerV{
-        width: 1650px;
-      }
-      .h2V{
-       text-align: center;
-       margin-left: 100px;
-       margin-right: 30px;
-       width: 110%;
-       transition: 0.5s ease, transform 0.5s ease;
-       border-style:outset;
-       background-color:rgb(231, 158, 48);
-       padding: 5px;
+.h2{
+    margin: 20px auto;
+    width: 95%;
+    text-align: center;
+}
+
+/* HLAVNI RAMECEK */
+
+.ramecky{
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(83, 82, 82);
+    border: 5px groove black;
+    box-shadow: 3px 4px 5px black;
+    min-height: 450px;
+    width: 95%;
+    color: black;
+    font-family: serif;
+    transition: 1s;
+    padding: 20px;
+}
+
+.ramecky:hover{
+    color: white;
+    transform: scale(0.98);
+}
+
+/* HR */
+
+hr{
+    height: 4px;
+    background-color: white;
+}
+
+/* NADPIS BĚLOSAD */
+
+.h3{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* KONTEJNER */
+
+.containerV{
+    width: 100%;
+    max-width: 1615px;
+    margin: auto;
+}
+
+/* H2 */
+
+.h2V{
+    text-align: center;
+    margin: 20px auto;
+    width: 95%;
+    border-style: outset;
+    background-color: rgb(231, 158, 48);
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.h2V:hover{
+    transform: scale(1.05);
+    text-shadow: 2px 1px 5px;
+}
+
+/* FOOTER */
+
+.footer1{
+    text-align: center;
+    width: 100%;
+    min-height: 127px;
+    padding: 40px;
+    margin: 70px 0 0;
+    color: white;
+}
+
+/* DROPDOWN */
+
+.dropdown{
+    width: 300px;
+    max-width: 95%;
+    
+}
+
+.dropdown-content{
+    margin-left: 0;
+    width: 80%;
+    color: black;
+    margin-left:15px;
+}
+
+.dropdown-content a:hover{
+    color: rgb(19, 68, 21);
+}
+.dropdown-dropdown-content a{
+    color: rgb(19, 68, 21);
+}
+/* ZPET */
+
+.zpatecka li{
+    margin-left: 0;
+}
+
+/* OBRAZEK */
+
+img{
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.zruseni a:hover{
+    color: white;
+}
+
+.tuk{
+    color: black;
+}
+
+/* ===================== */
+/* TABLET */
+/* ===================== */
+
+@media (max-width: 992px){
+
+    .h3{
+        font-size: 42px;
     }
-     .h2V:hover{
-       transition: 0.5s;
-       transform: scale(1.2);
-       text-shadow: 2px 1px 5px;
-     }
-      .footer1{
-       text-align: center;
-       width: 153%;
-       height: 77px;
-       margin-left: 0.1px;
-       margin-top: 120px;
-       transition: 5s ease;
-       text-decoration: none;
-       color: white;
-       
-     }
-     .zruseni a:hover{
-        color: white;
-     }
-     .tuk{
-        color: black;
-     }
+
+    .ramecky{
+        width: 98%;
+    }
+
+    .h2V,
+    .h2{
+        width: 98%;
+    }
+}
+
+/* ===================== */
+/* MOBIL */
+/* ===================== */
+
+@media (max-width: 768px){
+
+    .rightmenu ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rightmenu li{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .h3{
+        font-size: 30px;
+    }
+
+    .h2,
+    .h2V{
+        width: 98%;
+        margin: 10px auto;
+    }
+
+    .ramecky{
+        width: 98%;
+        min-height: auto;
+        padding: 15px;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
     .dropdown{
-        width: 35%;
+        width: 95%;
     }
-    .dropdown-content{
-       margin-left: 3px;
+
+    .footer1{
+        padding: 20px;
     }
-    .dropdown-content a:hover{
-        color:rgb(19, 68, 21) ;
-    }
-    .zpatecka li{
-        margin-left: 4px;
-    }
+}
     </style>
 
 
